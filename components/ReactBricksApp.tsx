@@ -10,7 +10,7 @@ const ReactBricksApp = ({ Component, pageProps }: AppProps) => {
   const savedColorMode =
     typeof window === 'undefined' ? '' : localStorage.getItem('color-mode')
 
-  const [colorMode, setColorMode] = useState(savedColorMode || 'light')
+  const [colorMode, setColorMode] = useState(savedColorMode || 'dark')
 
   const { setTheme } = useTheme()
 

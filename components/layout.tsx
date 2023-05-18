@@ -1,4 +1,5 @@
 import React, { ReactNode } from 'react'
+import NavBar from '../components/navBar'
 
 interface LayoutProps {
   children?: ReactNode
@@ -7,7 +8,8 @@ interface LayoutProps {
 const Layout: React.FC<LayoutProps> = ({ children }) => {
   return (
     <div className="flex flex-col h-screen justify-between font-content antialiased">
-      <main className="mb-auto dark:bg-gray-900">{children}</main>
+      <NavBar />
+      <main className="flex min-h-screen flex-col item-center items-center sm:p-12 md:p-48 md:py-48 md:pt-24">{children}</main>
     </div>
   )
 }
