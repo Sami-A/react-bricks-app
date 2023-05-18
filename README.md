@@ -39,7 +39,6 @@ Here is the code where I added my custom components as **Bricks**:
       },      
     ],
   },
-</pre>
 ```
 When you go to the editor file you can find it under a category named **Components**.
 
